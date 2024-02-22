@@ -1,0 +1,287 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.nav{
+	background: #000;
+	width: 100%;
+	height: 120px;
+	
+}
+.topnav{
+	background: #000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	color: white;
+	margin: 0 20px;
+}
+.topnav h3{
+	font-weight: 800;
+	font-size: 23px;
+	cursor: pointer;
+}
+.search{
+	background-color: gray;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.topnav input{
+	padding-left: 15px;
+	background: transparent;
+	border: none;
+	border-radius: 8px;
+	width: 200px;
+	height: 32px;
+	color: lightgray;
+}
+.topnav input::placeholder{
+	color: lightgray;
+	font-size: 15px;
+	cursor: pointer;
+	display: flex;
+
+}
+
+.topnav img{
+	height: 26px;
+	width: 26px; 
+	position: absolute;
+	left: 55%;
+	margin-top: 3px;
+	
+	}
+.topnav h5{
+	font-size: 17px;
+	font-weight: 900;
+     border-bottom: solid green;
+	 cursor: pointer;
+}
+.bottomnav{
+	margin-top: 30px;
+	color: lightgray;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	.items{
+		margin-right: 50px;
+		cursor: pointer;
+		font-weight: 400;
+		
+
+	}
+	.items:hover{
+		border-bottom: 2px solid green;
+		transition: all 1s ease-in-out;
+	}
+	.slider{
+		background-image: url(img/bg1.webp) ;
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 91%);
+		background-size: 100% 130vh;
+		background-repeat: no-repeat;
+		overflow: hidden;
+	}
+	.sliderwap{
+		display: flex;
+		width: 500vw;
+		height: 90vh;
+	 transition: all 1.5s ease-in-out;
+	}
+	.slideitem{
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+	.slidebg{
+		width: 750px;
+		height: 750px;
+		border-radius: 50%;
+		position: absolute;
+		background: #000;
+
+	}
+	.slideitem img{
+		z-index: 1;
+      
+	}
+	.title{
+		position: absolute;
+		top: 10%;
+		right: 11%;
+		color: white;
+		font-size: 40px;
+		font-weight: 900;
+		text-align: center;
+		z-index: 1;
+	}
+	.price{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		color: white;
+		font-size: 40px;
+		font-weight: 400;
+		text-align: center;
+		border: 1px solid gray;
+	}
+	.btn{
+		position: absolute;
+		top: 60%;
+		right: 12%;
+		padding: 5px;
+		color: white;
+		font-size: 30px;
+		font-weight: 900;
+		cursor: pointer;
+	 background: #000;
+	 border: 1px solid gray;
+	}
+.btn:hover{
+	background: white;
+	color: black;
+}
+
+.slideitem:nth-child(1) .slidebg{
+	background-color: #369e62;
+}
+
+.slideitem:nth-child(2) .slidebg{
+	background-color: rebeccapurple;
+}
+
+.slideitem:nth-child(3) .slidebg{
+	background-color: teal;
+}
+
+.slideitem:nth-child(4) .slidebg{
+	background-color: cornflowerblue;
+}
+
+.slideitem:nth-child(5) .slidebg{
+	background-color: rgb(124,115,80);
+}
+.slideitem:nth-child(1) .price{
+	color: #369e62;
+}
+
+.slideitem:nth-child(2) .price{
+	color: rebeccapurple;
+}
+
+.slideitem:nth-child(3) .price{
+	color: teal;
+}
+
+.slideitem:nth-child(4) .price{
+	color: cornflowerblue;
+}
+
+.slideitem:nth-child(5) .price{
+	color: rgb(124,115,80);
+}
+
+.features{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	margin-top: 40px;
+
+}
+.featureimg{
+height: 50px;
+	width: 50px;
+}
+.featuretitle{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.5em;
+}
+.featuredec{
+	font-size: 14px;
+	width: 60%;
+	text-align: center;
+	margin-left: 23%;
+	margin-top: 10px;
+	color: gray;
+	}
+	.product{
+		height: 100vh;
+		background: whitesmoke;
+		position: relative;
+		margin-top: 20px;
+		clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+.proimg{
+	width: 50%;
+	margin-top: 50px;
+}
+.productdetails{
+	position: absolute;
+	top: 10%;
+	right: 0;
+	width: 40%;
+	padding: 50px;
+}
+.protitle{
+	font-size: 75px;
+	font-weight: 900
+}
+.prodescription{
+	font-size: 16px;
+	color: gray;
+	margin-top: 10px;
+}
+.sizes{
+ display:flex;
+ position: absolute;
+ right: 31%;
+ top: 70%;
+
+}
+.size{
+	padding: 10px;
+	border: .5px solid gray;
+	margin: 2px;
+}
+.colors{
+	display: flex;
+	position: absolute;
+	right: 39%;
+	top: 62%;
+	cursor: pointer;
+}
+.color{
+	height: 32px;
+	width: 32px;
+	background: #000;
+     margin: 2px;
+	border-radius: 5px;
+
+}
+.color:last-child{
+	background: darkblue;
+}
+.probtn{
+	position: absolute;
+	right: 10%;
+	bottom: 15%;
+	border: 1px solid black;
+	padding: 15px;
+	border-radius: 5px;
+	background: black;
+	color: white;
+	font-weight: 800;
+}
+.probtn:hover{
+	background: white;
+	color: black;
+}
